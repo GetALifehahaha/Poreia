@@ -8,7 +8,6 @@ export { default as Form } from './components/Form.jsx';
 export { default as Input } from './components/Input.jsx';
 export { default as Navbar } from './components/Navbar.jsx';
 export { default as PageLogo } from './components/PageLogo.jsx';
-export { default as Sidebar } from './components/Sidebar.jsx';
 export { default as Tooltip } from './components/Tooltip.jsx';
 
 // CONTEXT

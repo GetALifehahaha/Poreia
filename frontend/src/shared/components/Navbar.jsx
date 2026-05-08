@@ -1,7 +1,7 @@
 import { } from 'react'
 import { useTheme } from '../context/ThemeContext'
 import { Sun, Moon } from 'lucide-react'
-import { cn } from '../'
+import { cn, Button } from '../'
 import { Link } from 'react-router-dom'
 
 const links = [
@@ -35,17 +35,18 @@ const listLinks = links.map((link) => {
 
 const Navbar = () => {
     return (
-        <nav className='flex flex-row justify-between'>
-            <div className="">
+        <nav className='flex flex-row justify-between p-2'>
+            <div className="flex-1">
                 <h3 className='text-secondary'>Poreia</h3>
             </div>
 
-            <div className="flex flex-row gap-2">
+            <div className="flex flex-row gap-4 items-center">
                 {listLinks}
             </div>
 
-            <div className="">
+            <div className="flex-1 flex flex-row justify-end gap-2">
                 <ThemeToggle />
+                <Button text="Let's Work Together!" />
             </div>
         </nav>
     )

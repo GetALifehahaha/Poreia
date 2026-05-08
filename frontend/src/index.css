@@ -21,17 +21,23 @@ body {
 
     --color-secondary: #3c485e;
     --color-secondary-2: #968d90;
+
+    --color-text: #dedfe0;
+    --color-text-onlight: #0e0f14;
 }
 
 .dark {
     --color-main: #3c485e;
     --color-main-2: #2f384a;
 
-    --color-primary: #d9b899;
-    --color-primary-2: #af7f6b;
+    --color-primary: #a77f6c;
+    --color-primary-2: #a36451;
 
     --color-secondary: #ffffff;
     --color-secondary-2: #d1d5db;
+
+    --color-text: #1f2025;
+    --color-text-onlight: #fcfbff;
 }
 
 @theme {
@@ -43,6 +49,9 @@ body {
 
     --color-secondary: var(--color-secondary);
     --color-secondary-2: var(--color-secondary-2);
+
+    --color-text: var(--color-text);
+    --color-text-onlight: var(--color-text-onlight);
 }
 
 @layer base {
