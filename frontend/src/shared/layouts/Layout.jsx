@@ -3,11 +3,17 @@ import { Outlet } from 'react-router-dom'
 import { Navbar, Footer } from '../'
 
 
+
+
+
 const Layout = () => {
     return (
-        <div>
+        <div className='bg-main-2 w-full min-h-screen'>
             <Navbar />
-            <Outlet />
+
+            <div className='p-2 w-full min-h-full overflow-y'>
+                <Outlet />
+            </div>
             <Footer />
         </div>
     )

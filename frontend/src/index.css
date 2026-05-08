@@ -3,10 +3,70 @@
 @font-face {
     font-family: "Google Sans";
     src: url('./assets/fonts/GoogleSans_17pt-Regular.ttf') format('truetype');
-    font-variant: 100 900;
     font-display: swap;
 }
 
 body {
-  font-family: "Google Sans";
+    font-family: "Google Sans";
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+    --color-main: #ffffff;
+    --color-main-2: #ebe6e0;
+
+    --color-primary: #d9b899;
+    --color-primary-2: #af7f6b;
+
+    --color-secondary: #3c485e;
+    --color-secondary-2: #968d90;
+}
+
+.dark {
+    --color-main: #3c485e;
+    --color-main-2: #2f384a;
+
+    --color-primary: #d9b899;
+    --color-primary-2: #af7f6b;
+
+    --color-secondary: #ffffff;
+    --color-secondary-2: #d1d5db;
+}
+
+@theme {
+    --color-main: var(--color-main);
+    --color-main-2: var(--color-main-2);
+
+    --color-primary: var(--color-primary);
+    --color-primary-2: var(--color-primary-2);
+
+    --color-secondary: var(--color-secondary);
+    --color-secondary-2: var(--color-secondary-2);
+}
+
+@layer base {
+  h1 {
+    @apply text-5xl font-semibold tracking-tight;
+  }
+
+  h2 {
+    @apply text-4xl font-semibold tracking-tight;
+  }
+
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+
+  h4 {
+    @apply text-xl font-medium;
+  }
+
+  h5 {
+    @apply text-lg font-medium;
+  }
+
+  p {
+    @apply text-base leading-7;
+  }
 }
