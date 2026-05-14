@@ -11,7 +11,7 @@ const Layout = () => {
         <div className='bg-main-2 w-full min-h-screen'>
             <Navbar />
 
-            <div className='p-2 w-full min-h-full overflow-y'>
+            <div className='p-2 w-full h-full overflow-y'>
                 <Outlet />
             </div>
             <Footer />

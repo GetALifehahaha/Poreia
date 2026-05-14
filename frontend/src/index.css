@@ -12,46 +12,27 @@ body {
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-:root {
-    --color-main: #ffffff;
-    --color-main-2: #ebe6e0;
-
-    --color-primary: #d9b899;
-    --color-primary-2: #af7f6b;
-
-    --color-secondary: #3c485e;
-    --color-secondary-2: #968d90;
-
-    --color-text: #dedfe0;
-    --color-text-onlight: #0e0f14;
-}
-
-.dark {
-    --color-main: #3c485e;
-    --color-main-2: #2f384a;
-
-    --color-primary: #a77f6c;
-    --color-primary-2: #a36451;
-
-    --color-secondary: #ffffff;
-    --color-secondary-2: #d1d5db;
-
-    --color-text: #1f2025;
-    --color-text-onlight: #fcfbff;
-}
-
 @theme {
-    --color-main: var(--color-main);
-    --color-main-2: var(--color-main-2);
+    /* Surface */
+    --color-background: #dcd9d4;
+    --color-foreground: #e3e1dc;
 
-    --color-primary: var(--color-primary);
-    --color-primary-2: var(--color-primary-2);
+    --color-card: #eae8e5;
+    --color-card-foreground: #f1f0ee;
 
-    --color-secondary: var(--color-secondary);
-    --color-secondary-2: var(--color-secondary-2);
+    --color-popover: ;
+    --color-popover-foreground: ;
 
-    --color-text: var(--color-text);
-    --color-text-onlight: var(--color-text-onlight);
+    --color-muted: #ada193;
+    --color-muted-foreground: #ded8d3;
+
+    /* Brand */
+    --color-primary: #971c1e;
+    --color-primary-foreground: #c97b70;
+  
+
+    --color-secondary: #161719;
+    --color-secondary-foreground: #3d3e40;
 }
 
 @layer base {
@@ -68,14 +49,14 @@ body {
   }
 
   h4 {
-    @apply text-xl font-medium;
-  }
-
-  h5 {
     @apply text-lg font-medium;
   }
 
+  h5 {
+    @apply text-base font-medium;
+  }
+
   p {
-    @apply text-base leading-7;
+    @apply text-sm leading-7;
   }
 }

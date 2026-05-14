@@ -1,7 +1,7 @@
 import { } from 'react'
 import { useTheme } from '../context/ThemeContext'
 import { Sun, Moon } from 'lucide-react'
-import { cn, Button } from '../'
+import { Button } from '../'
 import { Link } from 'react-router-dom'
 
 const links = [
@@ -40,7 +40,7 @@ const Navbar = () => {
                 <h3 className='text-secondary'>Poreia</h3>
             </div>
 
-            <div className="flex flex-row gap-4 items-center">
+            <div className="hidden md:flex flex-row gap-4 items-center">
                 {listLinks}
             </div>
 
