@@ -1,17 +1,16 @@
-import {} from 'react'
+import { } from 'react'
 import { project_data } from '..'
 import { useNavigate } from 'react-router-dom'
 import { Button } from '../../../shared';
-import { Info } from 'lucide-react';
 
 const ProjectGrid = () => {
     const navigate = useNavigate();
 
-    const renderProjectData = project_data.map((project, index) => 
-        <div key={index} className='h-80 rounded-lg bg-foreground flex flex-col w-full p-2 shadow-muted shadow-md'>
+    const renderProjectData = project_data.map((project, index) =>
+        <div key={index} className='h-80 rounded-lg bg-card flex flex-col w-full p-2 '>
             <h2 className='text-secondary'>{project.name}</h2>
             <h4 className='mt-auto text-center mb-2'>{project.description}</h4>
-            
+
             <Button text={`More Details`} className="w-full rounded-md" onClick={() => navigate(`project/${project.link}`)} />
         </div>
     )
